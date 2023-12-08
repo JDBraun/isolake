@@ -10,7 +10,7 @@ This Terraform code is provided as a sample for reference and testing purposes o
 - For enhanced security, it is recommended to use more secure methods like AWS Secret Manager or environment-specific secrets for storing credentials.
 -----------
 ### Architecture
-![Isolake Architecture](https://github.com/JDBraun/isolake-house/blob/origin/img/isolake-networktopology.png)
+![Isolake Architecture](https://github.com/JDBraun/isolake/blob/origin/img/isolake-network-topology.png)
 
 -----------
 ### Version Requirements
