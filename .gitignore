@@ -15,11 +15,6 @@
 */.terraform
 */.terraform.*
 
-# Variable examples
-isolake-variables*
-isolake.tf
-*/isolake.tf
-
 # .tfstate files
 *.tfstate
 *.tfstate.*
