@@ -46,7 +46,7 @@ This Terraform code is provided as a sample for reference and testing purposes o
 | <a name="module_lockdown_nacls"></a> [lockdown\_nacls](#module\_lockdown\_nacls) | ./lockdown/nacls | n/a |
 | <a name="module_uc_data"></a> [uc\_data](#module\_uc\_data) | ./uc_data | n/a |
 | <a name="module_uc_init"></a> [uc\_init](#module\_uc\_init) | ./uc_init | n/a |
-| <a name="module_uc_assignment"></a> [uc\_init](#module\_uc\_assignment) | ./uc_assignment | n/a |
+| <a name="module_uc_assignment"></a> [uc\_assignment](#module\_uc\_assignment) | ./uc_assignment | n/a |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | 5.1.1 |
 | <a name="module_vpc_endpoints"></a> [vpc\_endpoints](#module\_vpc\_endpoints) | terraform-aws-modules/vpc/aws//modules/vpc-endpoints | 3.11.0 |
 
