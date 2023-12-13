@@ -1,5 +1,9 @@
-// Databricks Configurations
+resource "null_resource" "previous" {}
 
+resource "time_sleep" "wait_30_seconds" {
+  depends_on      = [null_resource.previous]
+  create_duration = "30s"
+} 
 // Databricks Credential Configuration for Logs
 resource "databricks_mws_credentials" "log_writer" {
   account_id       = var.databricks_account_id
@@ -30,6 +34,8 @@ resource "databricks_mws_log_delivery" "audit_logs" {
   log_type                 = "AUDIT_LOGS"
   output_format            = "JSON"
   depends_on = [
-    aws_s3_bucket_policy.log_delivery
+    aws_s3_bucket_policy.log_delivery,
+    aws_iam_role_policy.log_delivery_policy,
+    time_sleep.wait_30_seconds
   ]
 }
