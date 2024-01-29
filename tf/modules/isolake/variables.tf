@@ -165,3 +165,8 @@ variable "workspace_vpce_service" {
   description = "VPCE service for workspace"
   type        = string
 }
+
+variable "workspace_level_tags" {
+  description = "The custom tags key-value pairing that is attached to this workspace. "
+  type        = map(string)
+}

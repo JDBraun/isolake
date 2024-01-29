@@ -19,6 +19,7 @@ module "databricks_mws_workspace" {
   workspace_storage_key       = aws_kms_key.workspace_storage.arn
   managed_storage_key_alias   = aws_kms_alias.managed_storage_key_alias.name
   workspace_storage_key_alias = aws_kms_alias.workspace_storage_key_alias.name
+  workspace_level_tags        = var.workspace_level_tags
 }
 
 // Create Unity Catalog if not provided
