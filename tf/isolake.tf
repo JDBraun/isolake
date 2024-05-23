@@ -33,6 +33,7 @@ module "isolake" {
   availability_zones   = ["us-east-1a", "us-east-1b"]   // Availability zones for resource deployment
   sg_ingress_protocol  = ["tcp", "udp"]                 // Allowed protocols for within security group ingress
   sg_egress_protocol   = ["tcp", "udp"]                 // Allowed protocols for within security group egress
+  workspace_level_tags = { "workspace_tag_sample" = "isolake" }
 
   // Optional frontend lockdown through AWS AppStream and PrivateLink
   enable_front_end_lockdown  = false           // Flag to enable frontend lockdown

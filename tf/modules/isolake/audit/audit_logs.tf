@@ -3,7 +3,7 @@ resource "null_resource" "previous" {}
 resource "time_sleep" "wait_30_seconds" {
   depends_on      = [null_resource.previous]
   create_duration = "30s"
-} 
+}
 // Databricks Credential Configuration for Logs
 resource "databricks_mws_credentials" "log_writer" {
   account_id       = var.databricks_account_id

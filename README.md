@@ -86,7 +86,7 @@ This Terraform code is provided as a sample for reference and testing purposes o
 | <a name="input_ws_ld_availability_zones"></a> [ws\_ld\_availability\_zones](#input\_ws\_ld\_availability\_zones) | Availability zone for AppStream | `list(string)` | n/a | yes |
 | <a name="input_ws_ld_private_subnets_cidr"></a> [ws\_ld\_private\_subnets\_cidr](#input\_ws\_ld\_private\_subnets\_cidr) | CIDR for AppStream private subnets | `list(string)` | n/a | yes |
 | <a name="input_ws_ld_vpc_cidr_range"></a> [ws\_ld\_vpc\_cidr\_range](#input\_ws\_ld\_vpc\_cidr\_range) | CIDR range for AppStream VPC | `string` | n/a | yes |
-
+| <a name="workspace_level_tags"></a> [workspace_level_tags](#input\workspace_level_tags) | The custom tags key-value pairing that is attached to this workspace| `map(string)` | {"workspace_tag_sample" = "isolake"} | yes |
 
 -----------
 

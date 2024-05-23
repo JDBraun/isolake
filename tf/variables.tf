@@ -35,3 +35,11 @@ variable "resource_prefix" {
   description = "Prefix for naming created resources"
   type        = string
 }
+
+variable "workspace_level_tags" {
+  description = "The custom tags key-value pairing that is attached to this workspace."
+  type        = map(string)
+  default = {
+    "workspace_tag_sample" = "isolake"
+  }
+}
